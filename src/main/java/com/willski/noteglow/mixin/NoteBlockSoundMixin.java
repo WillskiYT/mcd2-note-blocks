@@ -1,7 +1,9 @@
 package com.willski.noteglow.mixin;
 
 import net.minecraft.core.BlockPos;
+import com.willski.noteglow.DeepslateSequence;
 import net.minecraft.core.registries.BuiltInRegistries;
+import net.minecraft.server.level.ServerLevel;
 import net.minecraft.resources.Identifier;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundSource;
@@ -58,6 +60,9 @@ public abstract class NoteBlockSoundMixin {
         }
 
         int note = state.getValue(NoteBlock.NOTE);
+        if (level instanceof ServerLevel serverLevel) {
+            DeepslateSequence.onNotePlayed(serverLevel, pos, note % DEEPSLATE_NOTE_COUNT);
+        }
         SoundEvent sound = DEEPSLATE_SOUNDS[note % DEEPSLATE_NOTE_COUNT];
         // Play each recorded sound at its original pitch, no note-based shifting.
         level.playSound(null, pos, sound, SoundSource.RECORDS, 3.0F, 1.0F);

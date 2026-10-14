@@ -1,11 +1,8 @@
 {
   "schemaVersion": 1,
   "id": "willski_noteglow",
-  "version": "${version}",
+  "version": "1.0.0",
   "name": "mcd2 note blocks",
-  "authors": [
-    "WillskiYT"
-  ],
   "environment": "*",
   "mixins": [
     "willski_noteglow.mixins.json"
@@ -15,5 +12,14 @@
     "minecraft": "~26.3",
     "java": ">=25",
     "fabric-api": "*"
+  },
+  "authors": [
+    "WillskiYT"
+  ],
+  "contributors": {},
+  "entrypoints": {
+    "main": [
+      "com.willski.noteglow.NoteGlowMod"
+    ]
   }
 }

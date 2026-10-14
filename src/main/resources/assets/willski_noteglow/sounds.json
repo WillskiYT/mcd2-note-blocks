@@ -38,5 +38,10 @@
     "sounds": [
       "willski_noteglow:block/sonorous/sonorous_deepslate_sound_8"
     ]
+  },
+  "sing": {
+    "sounds": [
+      "willski_noteglow:sing"
+    ]
   }
 }

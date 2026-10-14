@@ -23,6 +23,8 @@ public abstract class NoteBlockSoundMixin {
     // Deepslate note blocks only use notes 0-7, one sound per note.
     private static final int DEEPSLATE_NOTE_COUNT = 8;
     private static final SoundEvent[] DEEPSLATE_SOUNDS = new SoundEvent[DEEPSLATE_NOTE_COUNT];
+    // Note 0 plays sound 8, notes 1-7 play sounds 1-7 (array holds zero-based sound indices).
+    private static final int[] NOTE_TO_SOUND = {7, 0, 1, 2, 3, 4, 5, 6};
 
     static {
         for (int i = 0; i < DEEPSLATE_SOUNDS.length; i++) {
@@ -63,7 +65,7 @@ public abstract class NoteBlockSoundMixin {
         if (level instanceof ServerLevel serverLevel) {
             DeepslateSequence.onNotePlayed(serverLevel, pos, note % DEEPSLATE_NOTE_COUNT);
         }
-        SoundEvent sound = DEEPSLATE_SOUNDS[note % DEEPSLATE_NOTE_COUNT];
+        SoundEvent sound = DEEPSLATE_SOUNDS[NOTE_TO_SOUND[note % DEEPSLATE_NOTE_COUNT]];
         // Play each recorded sound at its original pitch, no note-based shifting.
         level.playSound(null, pos, sound, SoundSource.RECORDS, 3.0F, 1.0F);
         cir.setReturnValue(true);

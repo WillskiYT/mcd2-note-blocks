@@ -21,5 +21,6 @@
     "main": [
       "com.willski.noteglow.NoteGlowMod"
     ]
-  }
+  },
+  "icon": "assets/willski_noteglow/icon.png"
 }

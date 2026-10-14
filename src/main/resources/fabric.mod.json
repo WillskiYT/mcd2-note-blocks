@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "id": "willski_noteglow",
-  "version": "1.0.0",
+  "version": "${version}",
   "name": "mcd2 note blocks",
   "authors": [
     "WillskiYT"

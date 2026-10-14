@@ -8,7 +8,8 @@ import net.minecraft.sounds.SoundSource;
 
 public final class DeepslateSequence {
     // Notes to play on deepslate note blocks, in order.
-    private static final int[] ORDER = {0, 2, 6, 5, 4, 1, 3, 7};
+    // Sound order 1, 3, 7, 6, 5, 2, 4, 8 expressed as notes (sound 8 is note 0).
+    private static final int[] ORDER = {1, 3, 7, 6, 5, 2, 4, 0};
     // Delay before the sound plays: 3 seconds = 60 ticks.
     private static final long DELAY_TICKS = 60;
 

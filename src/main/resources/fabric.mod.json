@@ -16,7 +16,6 @@
   "authors": [
     "WillskiYT"
   ],
-  "contributors": {},
   "entrypoints": {
     "main": [
       "com.willski.noteglow.NoteGlowMod"

@@ -1,79 +1,104 @@
 {
   "variants": {
     "note=0": {
-      "model": "willski_noteglow:block/note_block_0"
+      "model": "willski_noteglow:block/note_block_0",
+      "y": 0
     },
     "note=1": {
-      "model": "willski_noteglow:block/note_block_1"
+      "model": "willski_noteglow:block/note_block_1",
+      "y": 90
     },
     "note=2": {
-      "model": "willski_noteglow:block/note_block_2"
+      "model": "willski_noteglow:block/note_block_2",
+      "y": 180
     },
     "note=3": {
-      "model": "willski_noteglow:block/note_block_3"
+      "model": "willski_noteglow:block/note_block_3",
+      "y": 270
     },
     "note=4": {
-      "model": "willski_noteglow:block/note_block_4"
+      "model": "willski_noteglow:block/note_block_4",
+      "y": 0
     },
     "note=5": {
-      "model": "willski_noteglow:block/note_block_5"
+      "model": "willski_noteglow:block/note_block_5",
+      "y": 90
     },
     "note=6": {
-      "model": "willski_noteglow:block/note_block_6"
+      "model": "willski_noteglow:block/note_block_6",
+      "y": 180
     },
     "note=7": {
-      "model": "willski_noteglow:block/note_block_7"
+      "model": "willski_noteglow:block/note_block_7",
+      "y": 270
     },
     "note=8": {
-      "model": "willski_noteglow:block/note_block_8"
+      "model": "willski_noteglow:block/note_block_8",
+      "y": 0
     },
     "note=9": {
-      "model": "willski_noteglow:block/note_block_9"
+      "model": "willski_noteglow:block/note_block_9",
+      "y": 90
     },
     "note=10": {
-      "model": "willski_noteglow:block/note_block_10"
+      "model": "willski_noteglow:block/note_block_10",
+      "y": 180
     },
     "note=11": {
-      "model": "willski_noteglow:block/note_block_11"
+      "model": "willski_noteglow:block/note_block_11",
+      "y": 270
     },
     "note=12": {
-      "model": "willski_noteglow:block/note_block_12"
+      "model": "willski_noteglow:block/note_block_12",
+      "y": 0
     },
     "note=13": {
-      "model": "willski_noteglow:block/note_block_13"
+      "model": "willski_noteglow:block/note_block_13",
+      "y": 90
     },
     "note=14": {
-      "model": "willski_noteglow:block/note_block_14"
+      "model": "willski_noteglow:block/note_block_14",
+      "y": 180
     },
     "note=15": {
-      "model": "willski_noteglow:block/note_block_15"
+      "model": "willski_noteglow:block/note_block_15",
+      "y": 270
     },
     "note=16": {
-      "model": "willski_noteglow:block/note_block_16"
+      "model": "willski_noteglow:block/note_block_16",
+      "y": 0
     },
     "note=17": {
-      "model": "willski_noteglow:block/note_block_17"
+      "model": "willski_noteglow:block/note_block_17",
+      "y": 90
     },
     "note=18": {
-      "model": "willski_noteglow:block/note_block_18"
+      "model": "willski_noteglow:block/note_block_18",
+      "y": 180
     },
     "note=19": {
-      "model": "willski_noteglow:block/note_block_19"
+      "model": "willski_noteglow:block/note_block_19",
+      "y": 270
     },
     "note=20": {
-      "model": "willski_noteglow:block/note_block_20"
+      "model": "willski_noteglow:block/note_block_20",
+      "y": 0
     },
     "note=21": {
-      "model": "willski_noteglow:block/note_block_21"
+      "model": "willski_noteglow:block/note_block_21",
+      "y": 90
     },
     "note=22": {
-      "model": "willski_noteglow:block/note_block_22"
+      "model": "willski_noteglow:block/note_block_22",
+      "y": 180
     },
     "note=23": {
-      "model": "willski_noteglow:block/note_block_23"
+      "model": "willski_noteglow:block/note_block_23",
+      "y": 270
     },
     "note=24": {
-      "model": "willski_noteglow:block/note_block_24"
+      "model": "willski_noteglow:block/note_block_24",
+      "y": 0
     }
   }
 }

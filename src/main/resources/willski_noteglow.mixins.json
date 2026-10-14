@@ -3,7 +3,8 @@
   "package": "com.willski.noteglow.mixin",
   "compatibilityLevel": "JAVA_25",
   "mixins": [
-    "AbstractBlockStateMixin"
+    "AbstractBlockStateMixin",
+    "NoteBlockSoundMixin"
   ],
   "injectors": {
     "defaultRequire": 1

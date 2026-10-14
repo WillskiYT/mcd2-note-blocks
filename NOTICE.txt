@@ -1,0 +1,2 @@
+This mod includes deepslate note block sounds from "Mielon's The Sift" by Mielon,
+licensed under the MIT License. The full license is in LICENSE_the_sift.

@@ -16,6 +16,16 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
 @Mixin(NoteBlock.class)
 public abstract class NoteBlockSoundMixin {
+    private static final SoundEvent[] DEEPSLATE_SOUNDS = new SoundEvent[8];
+
+    static {
+        for (int i = 0; i < DEEPSLATE_SOUNDS.length; i++) {
+            Identifier id = Identifier.fromNamespaceAndPath("willski_noteglow",
+                    "block.sonorous_deepslate.sound_" + (i + 1));
+            DEEPSLATE_SOUNDS[i] = SoundEvent.createVariableRangeEvent(id);
+        }
+    }
+
     @Inject(method = "triggerEvent", at = @At("HEAD"), cancellable = true)
     private void willski$deepslateSound(BlockState state, Level level, BlockPos pos, int id, int param,
                                         CallbackInfoReturnable<Boolean> cir) {
@@ -24,21 +34,13 @@ public abstract class NoteBlockSoundMixin {
         }
 
         Identifier belowId = BuiltInRegistries.BLOCK.getKey(level.getBlockState(pos.below()).getBlock());
-        String path = belowId.getPath();
-        // Leave The Sift's own sonorous deepslate block alone, its mod already handles it.
-        if (!path.contains("deepslate") || belowId.getNamespace().equals("the_sift")) {
+        // Only regular deepslate, not its variants.
+        if (!belowId.getNamespace().equals("minecraft") || !belowId.getPath().equals("deepslate")) {
             return;
         }
 
         int note = state.getValue(NoteBlock.NOTE);
-        int index = (note % 8) + 1;
-        Identifier soundId = Identifier.fromNamespaceAndPath("the_sift", "block.sonorous_deepslate.sound_" + index);
-        SoundEvent sound = BuiltInRegistries.SOUND_EVENT.getValue(soundId);
-        if (sound == null) {
-            // The Sift isn't installed, so fall back to vanilla behavior.
-            return;
-        }
-
+        SoundEvent sound = DEEPSLATE_SOUNDS[note % 8];
         float pitch = (float) Math.pow(2.0, (note - 12) / 12.0);
         level.playSound(null, pos, sound, SoundSource.RECORDS, 3.0F, pitch);
         cir.setReturnValue(true);

@@ -1,0 +1,42 @@
+{
+  "block.sonorous_deepslate.sound_1": {
+    "sounds": [
+      "willski_noteglow:block/sonorous/sonorous_deepslate_sound_1"
+    ]
+  },
+  "block.sonorous_deepslate.sound_2": {
+    "sounds": [
+      "willski_noteglow:block/sonorous/sonorous_deepslate_sound_2"
+    ]
+  },
+  "block.sonorous_deepslate.sound_3": {
+    "sounds": [
+      "willski_noteglow:block/sonorous/sonorous_deepslate_sound_3"
+    ]
+  },
+  "block.sonorous_deepslate.sound_4": {
+    "sounds": [
+      "willski_noteglow:block/sonorous/sonorous_deepslate_sound_4"
+    ]
+  },
+  "block.sonorous_deepslate.sound_5": {
+    "sounds": [
+      "willski_noteglow:block/sonorous/sonorous_deepslate_sound_5"
+    ]
+  },
+  "block.sonorous_deepslate.sound_6": {
+    "sounds": [
+      "willski_noteglow:block/sonorous/sonorous_deepslate_sound_6"
+    ]
+  },
+  "block.sonorous_deepslate.sound_7": {
+    "sounds": [
+      "willski_noteglow:block/sonorous/sonorous_deepslate_sound_7"
+    ]
+  },
+  "block.sonorous_deepslate.sound_8": {
+    "sounds": [
+      "willski_noteglow:block/sonorous/sonorous_deepslate_sound_8"
+    ]
+  }
+}

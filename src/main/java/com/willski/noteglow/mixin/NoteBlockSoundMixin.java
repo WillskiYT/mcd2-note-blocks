@@ -59,8 +59,8 @@ public abstract class NoteBlockSoundMixin {
 
         int note = state.getValue(NoteBlock.NOTE);
         SoundEvent sound = DEEPSLATE_SOUNDS[note % DEEPSLATE_NOTE_COUNT];
-        float pitch = (float) Math.pow(2.0, (note - 12) / 12.0);
-        level.playSound(null, pos, sound, SoundSource.RECORDS, 3.0F, pitch);
+        // Play each recorded sound at its original pitch, no note-based shifting.
+        level.playSound(null, pos, sound, SoundSource.RECORDS, 3.0F, 1.0F);
         cir.setReturnValue(true);
     }
 }

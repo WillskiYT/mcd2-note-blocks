@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "willski_noteglow:block/note_glow_0"
+  }
+}

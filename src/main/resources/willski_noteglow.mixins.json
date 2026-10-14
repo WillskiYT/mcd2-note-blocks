@@ -1,0 +1,11 @@
+{
+  "required": true,
+  "package": "com.willski.noteglow.mixin",
+  "compatibilityLevel": "JAVA_25",
+  "mixins": [
+    "AbstractBlockStateMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
